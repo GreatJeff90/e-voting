@@ -1,6 +1,6 @@
 # ABSU E-Voting System
 
-ABSU E-Voting is a web-based voting system designed to facilitate student elections at the Abia State University. The platform allows students to securely cast votes for candidates running for various positions in student government.
+ABSU E-Voting is a web-based voting system that facilitates student elections at Abia State University. The platform allows students to securely cast votes for candidates running for various positions in student government.
 
 ## Features
 
@@ -23,10 +23,9 @@ ABSU E-Voting is a web-based voting system designed to facilitate student electi
 - **CSS3**: For styling and responsive design.
 - **Bootstrap**: For layout and component styling.
 - **JavaScript/jQuery**: For interactive elements.
-- **Flask (or any backend)**: To handle server-side logic and database integration (not included in this repository, but assumed for full functionality).
 
 ## Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/absu-e-voting.git
+   https://github.com/GreatJeff90/e-voting.git
