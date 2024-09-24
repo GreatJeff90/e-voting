@@ -9,30 +9,36 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">ABSU <span class="logo-highlight">E-Voting</span></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" alt="ABSU Logo" style="height: 30px; margin-right: 10px;">
+                <span class="fw-bold">ABSU</span> <span class="text-primary">E-Voting</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link fw-bold" href="vote.html">Vote Now</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="candidatelist.html">Candidates</a>
+                        <a class="nav-link fw-bold" href="candidate.html">Candidate Profiles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link fw-bold" href="results.html">Election Results</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign Up</a>
+                        <a class="nav-link fw-bold" href="login.html">
+                            <button class="btn btn-outline-primary fw-bold">Sign In <i class="bi bi-person-fill"></i></button>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -87,7 +93,7 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer bg-light mt-5">
+    <!-- <div class="footer mt-5">
         <div class="container">
             <footer class="py-5">
                 <div class="row">
@@ -119,8 +125,42 @@
                 </div>
             </footer>
         </div>
-    </div>
+    </div> -->
 
+    <footer class="bg-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <a href="/" class="navbar-brand fw-bold text-primary">ABSU E-Voting</a>
+                    <p class="text-muted">© 2024 ABSU E-Voting. All rights reserved.</p>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Useful Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">How to Vote</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Election Guidelines</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Candidates</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h5 class="fw-bold">Key Information</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Help Centre</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Technical Support</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Admin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>

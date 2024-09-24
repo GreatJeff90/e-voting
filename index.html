@@ -15,26 +15,28 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <img src="img/logo.png" alt="ABSU Logo" style="height: 30px; margin-right: 10px;">
                 <span class="fw-bold">ABSU</span> <span class="text-primary">E-Voting</span>
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="vote.html">Vote Now</a>
+                        <a class="nav-link fw-bold" href="vote.html">Vote Now</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="candidate.html">Candidate Profiles</a>
+                        <a class="nav-link fw-bold" href="candidate.html">Candidate Profiles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Election Results</a>
+                        <a class="nav-link fw-bold" href="results.html">Election Results</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.html">
-                            <button class="btn btn-outline-primary">Sign In <i class="bi bi-person-fill"></i></button>
+                        <a class="nav-link fw-bold" href="login.html">
+                            <button class="btn btn-outline-primary fw-bold">Sign In <i class="bi bi-person-fill"></i></button>
                         </a>
                     </li>
                 </ul>
@@ -43,80 +45,113 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Your Vote, Your Voice</h1>
-            <p class="lead">Participate in a secure and transparent online voting system at ABSU.</p>
-            <a href="vote.html" class="btn btn-light btn-lg mt-3">Vote Now <i class="bi bi-arrow-right-circle-fill"></i></a>
-        </div>
-    </section>
+    <section class="hero text-white text-center py-5 position-relative" style="background: url('img/background.jpg') no-repeat center center/cover; height: 100vh;">
+
+    <!-- Dark Overlay -->
+    <div class="overlay position-absolute w-100 h-100" style="background-color: rgba(0, 0, 0, 0.6); top: 0; left: 0; z-index: 1;"></div>
+    
+    <!-- Content -->
+    <div class="container d-flex flex-column justify-content-center align-items-center h-100 position-relative" style="z-index: 2;">
+        <h1 class="display-4">Your Vote, Your Voice</h1>
+        <p class="lead">Participate in a secure and transparent online voting system at ABSU.</p>
+        <a href="vote.html" class="btn btn-primary btn-lg mt-3">Vote Now <i class="bi bi-arrow-right-circle-fill"></i></a>
+    </div>
+</section>
+
 
     <!-- How It Works Section -->
-    <section class="how-it-works py-5">
-        <div class="container">
-            <div class="row text-center mb-4">
-                <div class="col">
-                    <h2 class="fw-bold">How It Works</h2>
-                    <p class="text-muted">Vote securely in 3 easy steps!</p>
-                </div>
-            </div>
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <i class="bi bi-pencil-square display-4 text-primary"></i>
-                    <h4 class="fw-bold mt-3">Step 1</h4>
-                    <p>Enter your Voter ID and access the voting page.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="bi bi-check-circle display-4 text-primary"></i>
-                    <h4 class="fw-bold mt-3">Step 2</h4>
-                    <p>Select your preferred candidate and confirm your vote.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="bi bi-lock display-4 text-primary"></i>
-                    <h4 class="fw-bold mt-3">Step 3</h4>
-                    <p>Securely submit your vote and get a confirmation receipt.</p>
-                </div>
+    <section class="how-it-works py-5 bg-light">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="row text-center mb-4">
+            <div class="col">
+                <h2 class="fw-bold display-4 text-primary">How It Works</h2>
+                <p class="text-muted lead">Vote securely in 3 easy steps!</p>
             </div>
         </div>
-    </section>
+
+        <!-- Step 1 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 text-center">
+                <img src="img/Voting-bro.png" alt="Step 1 Image" class="img-fluid rounded shadow-lg" style="max-width: 70%;">
+            </div>
+            <div class="col-md-6">
+                <h4 class="fw-bold h2 text-primary">Step 1: Authenticate</h4>
+                <p class="lead">Enter your Voter ID and securely access the voting platform.</p>
+                <p class="text-muted">Ensuring only authorized users participate in the voting process.</p>
+            </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="row align-items-center mb-5">
+            <div class="col-md-6 order-md-2 text-center">
+                <img src="img/Hotel Booking-cuate.png" alt="Step 2 Image" class="img-fluid rounded shadow-lg" style="max-width: 70%;">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h4 class="fw-bold h2 text-primary">Step 2: Vote</h4>
+                <p class="lead">Select your preferred candidate from the list and confirm your vote.</p>
+                <p class="text-muted">Your vote is anonymous, secure, and can only be cast once.</p>
+            </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img src="img/Hotel Booking-pana.png" alt="Step 3 Image" class="img-fluid rounded shadow-lg" style="max-width: 70%;">
+            </div>
+            <div class="col-md-6">
+                <h4 class="fw-bold h2 text-primary">Step 3: Confirm</h4>
+                <p class="lead">Submit your vote and receive a digital receipt for verification.</p>
+                <p class="text-muted">You can rest assured that your vote has been securely recorded.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
     <!-- Voting Section -->
-    <section class="voting py-5 bg-light">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title text-center h1">Cast Your Vote</h5>
-                            <p class="text-center lead">Your vote is confidential and secure!</p>
-                            <form id="votingForm">
-                                <div class="mb-3">
-                                    <label for="voterIdInput" class="form-label">Voter ID</label>
-                                    <input type="text" class="form-control" id="voterIdInput" placeholder="Enter your Voter ID" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="candidateSelect" class="form-label">Select Candidate</label>
-                                    <select class="form-control" id="candidateSelect" required>
-                                        <option value="">Choose your candidate</option>
-                                        <option>Candidate 1</option>
-                                        <option>Candidate 2</option>
-                                        <option>Candidate 3</option>
-                                        <option>Candidate 4</option>
-                                        <option>Candidate 5</option>
-                                    </select>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="pinInput" class="form-label">Vote Confirmation PIN</label>
-                                    <input type="password" class="form-control" id="pinInput" placeholder="Enter your confirmation PIN" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100">Submit Vote <i class="bi bi-check-circle-fill"></i></button>
-                            </form>
-                        </div>
+    <div class="d-flex justify-content-center align-items-center mt-5 mb-5">
+        <div class="card shadow-lg p-4 w-50 hero">
+            <div class="card-body">
+                <h1 class="card-title text-center text-primary fw-bold">Cast Your Vote</h1>
+                <p class="text-center h5 text-muted mb-4">Your vote is your voice! Choose wisely and cast your vote for the right candidate.</p>
+                
+                <!-- Voting Form -->
+                <form id="votingForm" class="px-4">
+                    <div class="form-group mb-3">
+                        <label for="voterIdInput" class="fw-bold">Voter ID</label>
+                        <input type="text" class="form-control" id="voterIdInput" placeholder="Enter your Voter ID" required>
                     </div>
-                </div>
+
+                    <div class="form-group mb-3">
+                        <label for="candidateSelect" class="fw-bold">Select Candidate</label>
+                        <select class="form-control" id="candidateSelect" required>
+                            <option value="">Choose your candidate</option>
+                            <option value="1">Candidate 1</option>
+                            <option value="2">Candidate 2</option>
+                            <option value="3">Candidate 3</option>
+                            <option value="4">Candidate 4</option>
+                            <option value="5">Candidate 5</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label for="pinInput" class="fw-bold">Vote Confirmation PIN</label>
+                        <input type="password" class="form-control" id="pinInput" placeholder="Enter your secure PIN" required>
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-primary btn-block p-3 fw-bold">Submit Vote <i class="bi bi-check-circle-fill"></i></button>
+                    </div>
+                </form>
+                <div id="errorMessages" class="text-danger mt-3 text-center"></div>
+                
+                <hr class="my-4">
+                <p class="text-center text-muted h6">Your vote is 100% secure and anonymous.</p>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
