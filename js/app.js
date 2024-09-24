@@ -1,15 +1,15 @@
 // Function to validate login details
 function validateLogin() {
-    var email = document.getElementById('email').value;
+    var matricNumber = document.getElementById('matricNumber').value; // Updated ID
     var password = document.getElementById('password').value;
     var errorMessage = document.getElementById('errorMessage');
     
     // Clear any previous error messages
     errorMessage.innerHTML = '';
 
-    // Basic email validation
-    if (!validateEmail(email)) {
-        errorMessage.innerHTML = "Please enter a valid email address.";
+    // Matric number validation: Must not be empty
+    if (!matricNumber) {
+        errorMessage.innerHTML = "Please enter your matric number.";
         return;
     }
 
@@ -19,12 +19,7 @@ function validateLogin() {
         return;
     }
 
-    // If validation passes, redirect to index.html
+    // If validation passes, redirect to profile.html
     window.location.href = 'profile.html';
 }
 
-// Simple email validation function
-function validateEmail(email) {
-    var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-    return re.test(email);
-}
